@@ -1,0 +1,52 @@
+---
+import Button from "../components/Button.astro";
+import data from "../config/projects.json";
+
+export async function getStaticPaths() {
+  return data.map(({ projectId, title, description, gallery }) => {
+    return {
+      params: { projectId },
+      props: { title, description, gallery },
+    };
+  });
+}
+
+const { title, description, gallery } = Astro.props;
+---
+
+<section class="section__projects">
+  <h1>{title}</h1>
+  <p>{description}</p>
+  <Button />
+  <div class="container__images">
+    {
+      gallery.map((image: string) => (
+        <img class="images__project" src={image} alt={title} />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .section__projects {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: blue;
+  }
+
+  .images__project {
+    width: 20%;
+    margin: 10px;
+  }
+
+  .container__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+</style>

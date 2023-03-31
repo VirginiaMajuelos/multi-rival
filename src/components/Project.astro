@@ -1,0 +1,113 @@
+---
+import projects from "../../src/config/projects.json";
+---
+
+<section>
+  <div>
+    <h2>PROYECTOS</h2>
+    <hr />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam,
+      autem!
+    </p>
+  </div>
+  <div class="container-card-project">
+    {
+      projects.map((project) => (
+        <a href={`/${project.projectId}`}>
+          <div class="card-project">
+            <h3 class="card-project__title">{project.title}</h3>
+            <hr />
+            <div class="card-project__description">
+              <p class="card-project__description--location">
+                {project.location}
+              </p>
+              <p class="card-project__description--text">
+                {project.description}
+              </p>
+            </div>
+            <img class="card-project__images" src={project.img} alt="" />
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: whitesmoke;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 34px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  hr {
+    height: 2px;
+    /* width: 70px; */
+    text-align: center;
+    position: relative;
+    background: #c92d2d;
+    margin-bottom: 40px;
+    border: 0;
+    text-align: center;
+  }
+
+  .container-card-project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .card-project {
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    /* width: fit-content; */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+  }
+
+  .card-project__title {
+    font-size: 26px;
+    display: block;
+    font-weight: 300;
+    color: #444;
+    text-align: center;
+  }
+
+  .card-project__description {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .card-project__description--location {
+    font-weight: 600;
+    font-size: 17px;
+    color: #555;
+    border-bottom: 2px dotted rgb(213, 213, 213);
+  }
+
+  .card-project__description--text {
+    font-style: italic;
+    font-size: 15px;
+    color: #777;
+  }
+
+  .card-project__images {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+</style>
