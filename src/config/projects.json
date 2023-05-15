@@ -2,9 +2,8 @@
   {
     "title": "VILLA FLORENCE",
     "projectId": "proyecto-villaflorence",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "location": "Ubicación",
-    "link": "https://elena-picanzo-r20kzsi16-virginiamajuelos.vercel.app/",
+    "description": "Villa Florence es una hermosa villa con un diseño elegante y sofisticado. Esta impresionante propiedad ofrece un ambiente relajado y lujoso, con cada detalle cuidadosamente diseñado para crear un espacio de vida excepcional.",
+    "location": "Fuengirola, España",
     "img": "/assets/portfolio/V01/global/04-large-global.avif",
     "alt": "image proyect villa florence",
     "gallery": [
@@ -57,9 +56,8 @@
   {
     "title": "VILLA PALMA",
     "projectId": "proyecto-villapalma",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "location": "Ubicación",
-    "link": "https://elena-picanzo-r20kzsi16-virginiamajuelos.vercel.app/",
+    "description": "Villa Palma es una impresionante villa mediterránea que combina el lujo y la elegancia en un solo espacio. Situada en una ubicación privilegiada, esta villa ofrece vistas espectaculares y un ambiente relajado para disfrutar de la vida al máximo.",
+    "location": "Marbella, España",
     "img": "/assets/portfolio/V02/exterior/01-exterior.jpg",
     "alt": "image proyect villa palma",
     "gallery": [
@@ -90,9 +88,8 @@
   {
     "title": "VILLA OLIVA",
     "projectId": "proyecto-villaoliva",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "location": "Ubicación",
-    "link": "/assets/portfolio/V03/HR Villa Olivia-003.avif",
+    "description": "Villa Olivia es una hermosa propiedad que cuenta con una elegante piscina y un diseño sofisticado. Esta villa ofrece una experiencia de vida excepcional, combinando la tranquilidad de una ubicación privilegiada con el lujo de una villa moderna.",
+    "location": "Marbella, España",
     "img": "/assets/portfolio/V03/HR Villa Olivia-003.avif",
     "alt": "image proyect villa oliva",
     "gallery": [
@@ -122,9 +119,8 @@
   {
     "title": "COTO REAL",
     "projectId": "proyecto-cotoreal",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "location": "Ubicación",
-    "link": "/assets/portfolio/V04/OBRAS.avif",
+    "description": "Una villa de estilo moderno y sofisticado, en un entorno natural impresionante, diseñada para ofrecer un ambiente de vida excepcional.",
+    "location": "En construcción",
     "img": "/assets/portfolio/V04/OBRAS.avif",
     "alt": "image proyect coto real",
     "gallery": ["/assets/portfolio/V04/OBRAS.avif"]

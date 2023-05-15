@@ -7,7 +7,9 @@ import projects from "../../src/config/projects.json";
     <div class="overlay">
       <h2>PROYECTOS</h2>
       <hr />
-      <p>Comprometidos con la calidad en cada proyecto</p>
+      <p class="container-header__text">
+        Comprometidos con la calidad en cada proyecto
+      </p>
     </div>
   </div>
   <div class="container-card-project">
@@ -40,14 +42,17 @@ import projects from "../../src/config/projects.json";
   }
 
   .container-header {
-    background: url("/assets/portfolio/menu-bg.avif");
-    background-repeat: no-repeat;
+    background: url("/assets/portfolio/menu-bg.avif") center top no-repeat fixed;
     background-size: cover;
-    background-position: center center;
     height: 300px;
     overflow: hidden;
     overflow-y: auto;
     perspective: 3px;
+  }
+
+  .container-header__text {
+    font-size: 22px;
+    color: #fff;
   }
 
   .overlay {
@@ -80,13 +85,15 @@ import projects from "../../src/config/projects.json";
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    margin-top: 40px;
+    padding-bottom: 80px;
   }
 
   .card-project {
-    margin: 10px 30px;
+    margin: 60px 30px;
     display: flex;
     flex-direction: column;
-    /* width: fit-content; */
+    width: 500px;
     height: 400px; /* Ajusta la altura según tus necesidades */
     justify-content: center; /* Centra verticalmente el contenido */
     align-items: center; /* Centra horizontalmente el contenido */
