@@ -1,0 +1,27 @@
+.gallery__container {
+  margin: 30px;
+}
+
+button {
+  background-color: red;
+  padding: 10px 30px;
+  color: white;
+  margin: 10px;
+}
+
+.container__images {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
+}
+
+.gallery__img {
+  width: auto;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+}
+
+.gallery__img:hover {
+  filter: brightness(50%);
+}

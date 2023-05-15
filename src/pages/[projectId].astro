@@ -1,5 +1,5 @@
 ---
-import Button from "../components/Button.astro";
+import Button from "@components/Button.astro";
 import data from "../config/projects.json";
 
 export async function getStaticPaths() {
@@ -38,15 +38,13 @@ const { title, description, gallery } = Astro.props;
   }
 
   .images__project {
-    width: 20%;
-    margin: 10px;
+    width: 800px;
   }
 
   .container__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 2fr 2fr minmax(250px, 2fr);
+    grid-gap: 10px;
   }
 </style>

@@ -1,0 +1,52 @@
+---
+---
+
+<nav id="#menu" class="nav-container nav-fixed-top">
+  <button>
+    <a href="" class="nav-container__logo">Multirivel</a>
+  </button>
+  <div class="nav-container__links">
+    <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+    <a href="#proyectos">PROYECTOS</a>
+    <a href="/galeria">GALERIA</a>
+    <a href="#rivel-family">RIVEL FAMILY</a>
+    <a href="#contacto">CONTACTO</a>
+  </div>
+</nav>
+
+<style>
+  .nav-container {
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+  }
+
+  #menu {
+    padding: 20px;
+    transition: all 0.8s;
+  }
+
+  .nav-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .nav-container__logo {
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    color: #c92d2d;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .nav-container__links a {
+    color: #fff;
+    margin: 0 10px;
+  }
+</style>
