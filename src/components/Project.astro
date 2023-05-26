@@ -3,7 +3,7 @@ import projects from "../../src/config/projects.json";
 ---
 
 <section id="proyectos">
-  <div class="container-header">
+  <div class="section-title container-header">
     <div class="overlay">
       <h2>PROYECTOS</h2>
       <hr />
@@ -17,8 +17,10 @@ import projects from "../../src/config/projects.json";
       projects.map((project) => (
         <a href={`/${project.projectId}`}>
           <div class="card-project">
-            <h3 class="card-project__title">{project.title}</h3>
-            <hr />
+            <div class="section-title">
+              <h3 class="section-title card-project__title">{project.title}</h3>
+              <hr />
+            </div>
             <div class="card-project__description">
               <p class="card-project__description--location">
                 {project.location}
@@ -27,7 +29,7 @@ import projects from "../../src/config/projects.json";
                 {project.description}
               </p>
             </div>
-            <img class="card-project__images" src={project.img} alt="" />
+            <img class="card-project__images" src={project.img} loading="lazy" alt="" />
           </div>
         </a>
       ))
@@ -70,12 +72,12 @@ import projects from "../../src/config/projects.json";
 
   hr {
     height: 2px;
-    /* width: 70px; */
+    width: 70px;
     position: relative;
     background: #c92d2d;
+    margin: 0;
     margin-bottom: 40px;
     border: 0;
-    text-align: center;
   }
 
   .container-card-project {
@@ -126,7 +128,7 @@ import projects from "../../src/config/projects.json";
   }
 
   .card-project__images {
-    max-width: 75%;
+    width: 520px;
     max-height: 75%;
     object-fit: cover;
     border: 1px solid rgba(255, 255, 255, 0.5);

@@ -1,7 +1,7 @@
 <section id="team" class="team-section">
   <div class="overly">
     <div class="team-container">
-      <div class="container__title">
+      <div class="section-title container__title">
         <h2>Conoce al Equipo</h2>
         <hr />
         <p>
@@ -10,8 +10,13 @@
       </div>
       <div class="container__team">
         <article class="article__card">
-          <img src="/assets/team/01.jpg" alt="Gustavo picture" width="280" />
-          <h3>Gustavo Duque</h3>
+          <img
+            loading="lazy"
+            src="/assets/team/01.jpg"
+            alt="Gustavo picture"
+            width="260"
+          />
+          <h3>Gustavo Velez</h3>
           <p>
             En nuestra empresa, el fundador y dueño es un padre comprometido que
             lidera con valores familiares. Él se dedica a construir un equipo
@@ -22,11 +27,12 @@
         </article>
         <article class="article__card">
           <img
+            loading="lazy"
             src="/assets/team/02.jpg"
             alt="Carlos Rios picture"
             width="280"
           />
-          <h3>Carlos Rios Velez</h3>
+          <h3>Antonio Velez</h3>
           <p>
             Uno de los hijos del fundador es el jefe de obra en nuestra empresa.
             Él trae consigo una rica experiencia en gestión de proyectos y
@@ -38,8 +44,13 @@
           </p>
         </article>
         <article class="article__card">
-          <img src="/assets/team/03.jpg" alt="Wilder picture" width="280" />
-          <h3>Wilder Ríos Velez</h3>
+          <img
+            loading="lazy"
+            src="/assets/team/03.jpg"
+            alt="Wilder picture"
+            width="280"
+          />
+          <h3>Mario Velez</h3>
           <p>
             Nuestro Project Manager, uno de los hijos del fundador, lidera y
             supervisa todos los proyectos de construcción. Con su amplia
@@ -56,7 +67,7 @@
 
 <style>
   .team-section {
-    color: #fff;
+    color: var(--secondary);
     background: #444 url("/assets/team/team-bg.avif") center top no-repeat fixed;
     background-size: cover;
     text-align: center;
@@ -68,14 +79,14 @@
   }
 
   .container__title h2 {
-    color: #fff;
+    color: var(--secondary);
     margin: 0 0 20px 0;
     font-weight: 500;
     font-size: 34px;
   }
 
   .container__title hr {
-    color: #fff;
+    color: var(--secondary);
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -99,7 +110,7 @@
   }
 
   .article__card h3 {
-    color: #fff;
+    color: var(--secondary);
     font-weight: 400;
     font-size: 20px;
     margin: 5px 0;
@@ -117,5 +128,15 @@
     border: 1px solid white;
     padding: 2px;
     margin: -2px; */
+  }
+
+  hr {
+    height: 2px;
+    width: 70px;
+    position: relative;
+    background: #c92d2d;
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
   }
 </style>

@@ -1,9 +1,50 @@
 ---
 import Gallery from "../components/Gallery.jsx";
 import Layout from "@layouts/Layout.astro";
+import BtnHome from "../components/BtnHome.astro";
+import MenuPage from "@components/MenuPage.astro";
 ---
 
 <Layout title="Galeria">
-  <h2>Galeria</h2>
+  <MenuPage />
+  <div id="galeria" class="section-galeria text-center center">
+    <div class="overlay">
+      <div class="section-title">
+        <h2>Galería</h2>
+        <hr />
+      </div>
+    </div>
+  </div>
   <Gallery client:load />
 </Layout>
+
+<style>
+  .section-galeria {
+    background: #444 url(/assets/portfolio/gallery-bg.jpg) center center
+      no-repeat fixed;
+    background-size: cover;
+    /* top: 0; */
+  }
+
+  .section-galeria .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 300px;
+  }
+
+  h2 {
+    padding-top: 150px;
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--secondary);
+  }
+
+  hr {
+    height: 2px;
+    width: 70px;
+    position: relative;
+    background: #c92d2d;
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
+  }
+</style>

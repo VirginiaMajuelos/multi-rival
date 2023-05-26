@@ -1,5 +1,5 @@
-<section id="contact">
-  <div class="contact-container__header">
+<section id="contacto">
+  <div class="section-title contact-container__header">
     <h2>CONTÁCTANOS</h2>
     <hr />
     <p>
@@ -54,6 +54,16 @@
     height: 740px;
   }
 
+  hr {
+    height: 2px;
+    width: 70px;
+    position: relative;
+    background: var(--primary);
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
+  }
+
   .contact-container__header {
     display: flex;
     flex-direction: column;
@@ -78,6 +88,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   .form-group {
@@ -108,12 +121,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      width: 200px;
+    }
   }
 
   button[type="submit"] {
     text-transform: uppercase;
     color: #fff;
-    background-color: #c92d2d;
+    background-color: var(--primary);
     border: 0;
     padding: 14px 20px;
     margin: 0;

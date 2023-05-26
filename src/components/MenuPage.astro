@@ -1,16 +1,12 @@
 ---
 ---
 
-<nav id="#menuPage" class="nav-container nav-fixed-top">
+<nav id="#menu" class="nav-container nav-fixed-top">
   <button>
     <a href="" class="nav-container__logo">Multirivel</a>
   </button>
-  <div class="nav-container__links">
-    <a href="#sobre_nosotros">SOBRE NOSOTROS</a>
-    <a href="#proyectos">PROYECTOS</a>
-    <a href="/galeria">GALERIA</a>
-    <a href="#team">RIVEL FAMILY</a>
-    <a href="#contacto">CONTACTO</a>
+  <div class="nav-container__home">
+    <a href="/">HOME</a>
   </div>
 </nav>
 
@@ -19,13 +15,13 @@
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 70px;
   }
 
-  #menuPage {
+  #menu {
     padding: 20px;
     transition: all 0.8s;
   }
@@ -34,7 +30,8 @@
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1;
+    top: 0;
   }
 
   .nav-container__logo {
@@ -45,12 +42,12 @@
     letter-spacing: 1px;
   }
 
-  .nav-container__links a {
+  .nav-container__home a {
     color: #fff;
     margin: 0 10px;
   }
 
-  .nav-container__links a:hover {
+  .nav-container__home a:hover {
     color: var(--primary);
   }
 </style>

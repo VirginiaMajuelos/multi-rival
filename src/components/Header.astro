@@ -5,18 +5,18 @@ import Navigation from "./Navigation.astro";
 <header id="header" class="header">
   <Navigation />
   <div class="overly">
-    <h1>Rivel</h1>
+    <h1>MultiRivel</h1>
     <p>REFORMAS, CONSTRUCCIONES Y MÁS...</p>
   </div>
 </header>
 
 <style>
   .header {
-    /* display: table; */
     width: 100%;
     height: 100vh;
+    display: table;
     padding: 0;
-    background: url(/assets/portfolio/intro-bg.jpg) no-repeat center center;
+    background: url(/assets/portfolio/intro-bg.avif) no-repeat center center;
     background-color: #e5e5e5;
     background-size: cover;
     text-align: center;
@@ -48,5 +48,18 @@ import Navigation from "./Navigation.astro";
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 40px;
+  }
+
+  /* Responsive CSS for Mobile */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 5em;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      margin: 10px;
+    }
   }
 </style>

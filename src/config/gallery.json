@@ -1,14 +1,26 @@
 [
   {
-    "url": "/assets/portfolio/V01/exterior/01-exterior.jpg",
+    "url": "/assets/portfolio/06-large-global.jpeg",
     "category": "exteriores"
   },
   {
-    "url": "/assets/portfolio/V01/exterior/04-exterior.jpg",
+    "url": "/assets/portfolio/01-large-global.jpeg",
     "category": "exteriores"
   },
   {
-    "url": "/assets/portfolio/V01/exterior/07-exterior.jpg",
+    "url": "/assets/portfolio/02-large-global.jpeg",
+    "category": "exteriores"
+  },
+  {
+    "url": "/assets/portfolio/03-large-global.jpeg",
+    "category": "exteriores"
+  },
+  {
+    "url": "/assets/portfolio/05-large-global.jpeg",
+    "category": "exteriores"
+  },
+  {
+    "url": "/assets/portfolio/menu-bg1.jpg",
     "category": "exteriores"
   },
   {
@@ -20,23 +32,19 @@
     "category": "exteriores"
   },
   {
-    "url": "/assets/portfolio/V02/exterior/02-exterior.jpg",
+    "url": "/assets/portfolio/V01/parking/02-parking.jpg",
     "category": "exteriores"
   },
   {
-    "url": "/assets/portfolio/V02/exterior/03-exterior.jpg",
-    "category": "exteriores"
-  },
-  {
-    "url": "/assets/portfolio/V02/exterior/04-exterior.jpg",
-    "category": "exteriores"
-  },
-  {
-    "url": "/assets/portfolio/V02/exterior/05-exterior.jpg",
-    "category": "exteriores"
+    "url": "/assets/portfolio/V01/escaleras/01-escaleras.jpg",
+    "category": "interiores"
   },
   {
     "url": "/assets/portfolio/V01/interior/01-interior.jpg",
+    "category": "interiores"
+  },
+  {
+    "url": "/assets/portfolio/V01/interior/04-interior.jpg",
     "category": "interiores"
   },
   {
@@ -45,10 +53,6 @@
   },
   {
     "url": "/assets/portfolio/V01/interior/03-interior.jpg",
-    "category": "interiores"
-  },
-  {
-    "url": "/assets/portfolio/V01/interior/04-interior.jpg",
     "category": "interiores"
   },
   {
@@ -64,35 +68,19 @@
     "category": "interiores"
   },
   {
-    "url": "/assets/portfolio/V01/interior/08-interior.jpg",
-    "category": "interiores"
-  },
-  {
-    "url": "/assets/portfolio/V02/interior/01-interior.jpg",
-    "category": "interiores"
-  },
-  {
-    "url": "/assets/portfolio/V02/interior/02-interior.jpg",
-    "category": "interiores"
-  },
-  {
-    "url": "/assets/portfolio/V02/interior/03-interior.jpg",
-    "category": "interiores"
-  },
-  {
     "url": "/assets/portfolio/V02/interior/04-interior.jpg",
     "category": "interiores"
   },
   {
-    "url": "/assets/portfolio/V01/cocina/01-cocina.jpg",
+    "url": "/assets/portfolio/V02/interior/07-interior.jpg",
     "category": "cocina"
   },
   {
-    "url": "/assets/portfolio/V01/cocina/02-cocina.jpg",
+    "url": "/assets/portfolio/V03/interior/08-interior.jpg",
     "category": "cocina"
   },
   {
-    "url": "/assets/portfolio/V01/cocina/03-cocina.jpg",
+    "url": "/assets/portfolio/V03/cocina/01-cocina.jpg",
     "category": "cocina"
   },
   {
@@ -100,20 +88,12 @@
     "category": "cocina"
   },
   {
-    "url": "/assets/portfolio/V01/servicios/01-servicios.jpg",
-    "category": "baños"
+    "url": "/assets/portfolio/V01/cocina/01-cocina.jpg",
+    "category": "cocina"
   },
   {
-    "url": "/assets/portfolio/V01/servicios/02-servicios.jpg",
-    "category": "baños"
-  },
-  {
-    "url": "/assets/portfolio/V01/servicios/03-servicios.jpg",
-    "category": "baños"
-  },
-  {
-    "url": "/assets/portfolio/V01/servicios/04-servicios.jpg",
-    "category": "baños"
+    "url": "/assets/portfolio/V02/interior/02-interior.jpg",
+    "category": "cocina"
   },
   {
     "url": "/assets/portfolio/V01/servicios/05-servicios.jpg",
@@ -128,7 +108,11 @@
     "category": "baños"
   },
   {
-    "url": "/assets/portfolio/V02/servicios/03-servicio.jpg",
+    "url": "/assets/portfolio/V01/servicios/01-servicios.jpg",
+    "category": "baños"
+  },
+  {
+    "url": "/assets/portfolio/V01/servicios/04-servicios.jpg",
     "category": "baños"
   },
   {
@@ -137,6 +121,14 @@
   },
   {
     "url": "/assets/portfolio/V01/escaleras/01-escaleras.jpg",
+    "category": "escaleras"
+  },
+  {
+    "url": "/assets/portfolio/V03/escaleras/01-escaleras.jpg",
+    "category": "escaleras"
+  },
+  {
+    "url": "/assets/portfolio/V03/escaleras/02-escaleras.jpg",
     "category": "escaleras"
   },
   {

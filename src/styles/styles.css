@@ -1,3 +1,11 @@
+CUSTOM PROPERTIES :root {
+  --primary: #c92d2d;
+  --secondary: #fff;
+  --terciary: #262626;
+  --text-color-primary: #333;
+  --text-color-secondary: #777;
+}
+
 /* FONT PATH */
 
 @font-face {
@@ -16,6 +24,12 @@
 
 /* STYLE BASE */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 body,
 html {
   font-family: "Raleway", sans-serif;
@@ -26,23 +40,24 @@ html {
   width: 100% !important;
   height: 100% !important;
 }
+
 h2 {
   margin: 0 0 20px 0;
   font-weight: 500;
   font-size: 34px;
-  color: #333;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 h3 {
   font-size: 22px;
   font-weight: 500;
-  color: #333;
+  color: var(--text-color-primary);
 }
 h4 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #333;
+  color: var(--text-color-primary);
 }
 h5 {
   text-transform: uppercase;
@@ -56,8 +71,17 @@ p.intro {
   margin: 12px 0 0;
   line-height: 24px;
 }
+
+p.text__description {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
 a {
-  color: #c92d2d;
+  color: var(--primary);
 }
 a:hover,
 a:focus {
@@ -71,9 +95,9 @@ ol {
   moz-padding: 0;
 }
 
-* html {
+/* * html {
   height: 1%;
-}
+} */
 
 ul,
 ol {
@@ -81,7 +105,13 @@ ol {
   /* webkit-padding: 0; */
   /* moz-padding: 0; */
 }
-hr {
+
+.section-title hr {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* hr {
   height: 2px;
   width: 70px;
   text-align: center;
@@ -90,11 +120,10 @@ hr {
   margin: 0;
   margin-bottom: 40px;
   border: 0;
-}
+} */
 
 /* OTHER STYLES */
 
 h1 {
-  color: red;
+  color: var(--primary);
 }
-

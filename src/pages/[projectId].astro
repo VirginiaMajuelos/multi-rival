@@ -1,50 +1,113 @@
 ---
 import Button from "@components/Button.astro";
 import data from "../config/projects.json";
+import MenuPage from "../components/MenuPage.astro";
+import Layout from "@layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return data.map(({ projectId, title, description, gallery }) => {
+  return data.map(({ projectId, title, descriptionText, gallery }) => {
     return {
       params: { projectId },
-      props: { title, description, gallery },
+      props: { title, descriptionText, gallery },
     };
   });
 }
 
-const { title, description, gallery } = Astro.props;
+const { title, descriptionText, gallery } = Astro.props;
 ---
 
-<section class="section__projects">
-  <h1>{title}</h1>
-  <p>{description}</p>
-  <Button />
-  <div class="container__images">
-    {
-      gallery.map((image: string) => (
-        <img class="images__project" src={image} alt={title} />
-      ))
-    }
-  </div>
-</section>
+<Layout title="Proyectos">
+  <section class="section__projects">
+    <MenuPage />
+    <div id="proyectos" class="section-galeria text-center center">
+      <div class="overlay">
+        <div class="section-title">
+          <h2 class="container__title">{title}</h2>
+          <hr />
+          <p class="text__description">{descriptionText}</p>
+        </div>
+      </div>
+    </div>
+    <Button />
+    <div class="gallery__container">
+      <div class="container__images">
+        {
+          gallery.map((image: string) => (
+            <img
+              loading="lazy"
+              class="images__project"
+              src={image}
+              alt={title}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
 
 <style>
   .section__projects {
     text-align: center;
   }
 
-  h1 {
-    font-size: 24px;
-    color: blue;
+  /* .section__description {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  } */
+
+  .section-galeria {
+    background: #444 url(/assets/portfolio/gallery-bg.jpg) center center
+      no-repeat fixed;
+    background-size: cover;
+    /* top: 0; */
+  }
+
+  .section-galeria .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    height: 400px;
+  }
+
+  h2 {
+    padding-top: 120px;
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--secondary);
+  }
+
+  hr {
+    height: 2px;
+    width: 70px;
+    position: relative;
+    background: #c92d2d;
+    margin: 0;
+    margin-bottom: 40px;
+    border: 0;
+  }
+
+  .gallery__container {
+    margin: 60px 30px;
   }
 
   .images__project {
-    width: 800px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 2%, 100% 2%, 100% 98%, 0 98%);
   }
 
   .container__images {
     display: grid;
-    margin: 0 auto;
-    grid-template-columns: 2fr 2fr minmax(250px, 2fr);
-    grid-gap: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
   }
 </style>
